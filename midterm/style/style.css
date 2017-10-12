@@ -1,0 +1,76 @@
+/*background color*/
+body {
+    background-color: #f5f5f0;
+    padding-top: 65px;
+    height: 100%;
+}
+
+/*general font styling*/
+p{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:150%;
+	color: #7a7a52;
+}
+
+/*header*/
+.header{
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:150%;
+}
+
+/*bootstap navbar*/
+.navbar{
+	background-color: #f5f5f0;
+	color: #000000;
+}
+
+/*homepage image*/
+.bgimage {
+  width:100%;
+  height: 2000px;
+  background: url('https://www.moma.org/media/W1siZiIsIjM5OTU4OSJdLFsicCIsImNvbnZlcnQiLCItcmVzaXplIDIwMDB4MjAwMFx1MDAzZSJdXQ.jpg?sha=50e17fc56511ecc7');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  background-attachment: fixed;
+  align-items: center;
+}
+/*homepage img text*/
+/*stuff*/
+.bgimage h1 {
+    position: fixed;
+    top: 15%;
+    left: 5%;
+    width: 100%;
+    font-size: 200px;
+    color: #7a7a52;
+}
+/*by carol*/
+.bgimage h3 {
+	position: fixed;
+	font-size: 75px;
+	color: #7a7a52;
+	text-align: left;
+	top: 75%;
+	right: 5%;
+}
+
+/*relative container for spotify iframe*/
+.spotify-container{
+	position: relative;
+    padding-bottom: 50%;
+    height: 0;
+    overflow: hidden;
+}
+
+/*spotify iframe, goes within container above*/
+.spotify-container-iframe{
+	position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
