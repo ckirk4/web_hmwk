@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+	
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<meta charset="utf-8" lang="en" name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+	<div id="top"></div>
+
+	<div class="container-fluid">
+		
+		<!-- nav bar -->
+		<nav class="navbar navbar-default">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		      <a class="navbar-brand" href="#">logo</a>
+		    </div>
+		    <ul class="nav navbar-nav">
+		      <li><a href="#">Home</a></li>
+		      <li><a href="#">1</a></li>
+		      <li><a href="#">2</a></li>
+		      <li><a href="#">3</a></li>
+		    </ul>
+		  </div>
+		</nav>	
+
+		<button onclick="display()">click me to hide jumbotron</button><br><br>
+
+		<!-- jumbotron -->
+		<div class="container-fluid">
+		  <div class="jumbotron" id="show">
+		    <h1>important info</h1> 
+		    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus nibh sit amet ipsum feugiat, sed ullamcorper diam pellentesque. Morbi lacinia massa et rhoncus egestas. Praesent sit amet efficitur nisl. Vestibulum tincidunt vulputate lacus, sit amet convallis purus molestie et. Duis hendrerit porta elit. Phasellus in metus elementum, aliquet nulla pretium, facilisis quam. Proin venenatis diam at commodo malesuada.</p> 
+		  </div> 
+		</div>	
+			
+		<!-- row1 -->
+		<div class="row">
+			<div class="col-lg-4 bg-sucsess">
+				<img src="images/DSC_0977.jpg">
+			</div>
+			<div class="col-lg-4 bg-sucsess">
+				<img src="images/IMG_0652.jpg">
+			</div>
+			<div class="col-lg-4 bg-sucsess">
+				<img src="images/IMG_0654.jpg">
+			</div>
+		</div>
+		<!-- row2 -->
+		<div class="row">
+			<div class="col-lg-4 bg-sucsess">
+				<img src="images/IMG_3267.jpg">
+			</div>
+			<div class="col-lg-4 bg-sucsess">
+				<img src="images/IMG_4031.jpg">
+			</div>
+			<div class="col-lg-4 bg-sucsess">
+				<img src="images/IMG_4166.jpg">
+			</div>
+		</div>
+		<!-- row3 -->
+		<div class="row">
+			<div class="col-lg-4 bg-sucsess">
+				<img src="images/IMG_4402.jpg">
+			</div>
+			<div class="col-lg-4 bg-sucsess">
+				<img src="images/IMG_4613.jpg">
+			</div>
+			<div class="col-lg-4 bg-sucsess">
+				<img src="images/IMG_4906.jpg">
+			</div>
+		</div>
+		
+	</div>
+
+	<div id="scroll">
+		<a href="#top"><img id="pic" src="http://downloadicons.net/sites/default/files/tip-arrow-icon-on-72778.png"></a>
+	</div>
+
+<script>
+function display() {
+    var x = document.getElementById("show");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>
+
+
+
+</body>
+</html>
