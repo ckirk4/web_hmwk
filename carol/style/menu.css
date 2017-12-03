@@ -1,0 +1,76 @@
+#icon {
+    position: fixed;
+    top: 1em;
+    right: 1em;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#icon img {
+    max-height: 3em;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0px;
+    background-color: rgba(168, 152, 200, 0.9);
+}
+
+.overlay-content {
+    position: relative;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #422972;
+    display: block;
+    transition: 0.3s;
+}
+
+/*#myNav {
+    display: none;
+}*/
+
+#arrow {
+    height: 50px;
+    padding-bottom: 5px;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+    text-decoration: none;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 1em;
+    padding-top: 0;
+    right: 1em;
+    font-size: 60px;
+}
+
+.closebtn img {
+    max-height: 1em;
+    padding-top: o;
+    /*top: 1em;
+    right: 1em;*/
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
