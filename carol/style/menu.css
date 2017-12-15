@@ -23,6 +23,7 @@ h3 {
     background-color: inherit;
     font-family: 'Poiret One', cursive;
     text-decoration: none;
+    font-size: 2em;
 }
 
 /* OPEN / CLOSE BTNS */
@@ -78,7 +79,6 @@ h3 {
     text-decoration: inherit;
 }
 
-
 /* OVERLAY */
 
 .overlay {
@@ -107,8 +107,7 @@ h3 {
 
 .overlay a:hover {
     text-decoration: none;
-    color: #BC516C;
-    font-size: 120%;
+    color: #FFFDFE;
 }
 
 
