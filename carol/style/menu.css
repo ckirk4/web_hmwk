@@ -1,76 +1,121 @@
-#icon {
-    position: fixed;
-    top: 1em;
-    right: 1em;
-    cursor: pointer;
-    z-index: 1;
+/* 
+- Name: Responsive overlay menu framework
+- Version: 1.0
+- Latest update: 15.9.2015.
+- Author: Mario Loncarek
+- Author web site: http://marioloncarek.com
+*/
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
 }
 
-#icon img {
-    max-height: 3em;
+h3 {
+    color: #BC516C;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0 0;
+    background-color: inherit;
+    font-family: 'Poiret One', cursive;
+    text-decoration: none;
 }
+
+/* OPEN / CLOSE BTNS */
+
+.menu-btn {
+    position: fixed;
+    top: 6px;
+    right: 20px;
+    height: 0px;
+    z-index: 999;
+    display: inline;
+    font-size: 32px;
+    text-decoration: none;
+    color: #BC516C;
+    background-color: #F8D6DE;
+}
+
+.menu-btn a:hover {
+    display: inline-block;
+    text-decoration: none;
+    /* safari hack */
+}
+
+.btn-open:after {
+    color: #982C47;
+    content: "\f394";
+    font-family: "Ionicons";
+    -webkit-transition: all .2s linear 0s;
+    -moz-transition: all .2s linear 0s;
+    -o-transition: all .2s linear 0s;
+    transition-property: all .2s linear 0s;
+}
+
+.btn-open:hover:after {
+    color: #982C47;
+    text-decoration: inherit;
+}
+
+.btn-close:after {
+    color: #982C47;
+    content: "\f2d7";
+    font-family: "Ionicons";
+    text-decoration: none;
+    background-color: #F0B0C0;
+    -webkit-transition: all .2s linear 0s;
+    -moz-transition: all .2s linear 0s;
+    -o-transition: all .2s linear 0s;
+    transition-property: all .2s linear 0s;
+}
+
+.btn-close:hover:after {
+    color: #BC516C;
+    text-decoration: inherit;
+}
+
+
+/* OVERLAY */
 
 .overlay {
-    height: 100%;
-    width: 100%;
-    display: none;
     position: fixed;
-    z-index: 1;
     top: 0;
-    right: 0px;
-    background-color: rgba(168, 152, 200, 0.9);
+    z-index: 99;
+    display: none;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    background-color: #F0B0C0;
 }
 
-.overlay-content {
-    position: relative;
-    top: 50%;
-    width: 100%;
-    text-align: center;
+.overlay-container {
+    display: table;
+    margin: 0 auto;
+    padding-top: 20%;
+    background-color: inherit;
 }
 
 .overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: #422972;
-    display: block;
-    transition: 0.3s;
-}
-
-/*#myNav {
-    display: none;
-}*/
-
-#arrow {
-    height: 50px;
-    padding-bottom: 5px;
-}
-
-.overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
+    color: #982C47;
+    height: 20px;
     text-decoration: none;
 }
 
-.overlay .closebtn {
-    position: absolute;
-    top: 1em;
-    padding-top: 0;
-    right: 1em;
-    font-size: 60px;
+.overlay a:hover {
+    text-decoration: none;
+    color: #BC516C;
+    font-size: 120%;
 }
 
-.closebtn img {
-    max-height: 1em;
-    padding-top: o;
-    /*top: 1em;
-    right: 1em;*/
-}
 
-@media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  }
+/* RESPONSIVE */
+
+@media screen and (max-width: 768px) {
+    .menu-btn {
+        right: 25px;
+    }
 }

@@ -2,22 +2,28 @@
 	box-sizing: border-box;
 	text-align: center;
 	font-family: 'Poiret One', cursive;
+	/*background-color: #F8D6DE;*/
+	text-decoration: none;
 }
 
 .container-fluid {
 	height: 100vh;
 	width: 100vw;
-	background-color: rgb(248, 214, 222);
+	position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    /*color: #F8D6DE;*/
+    /*width: 100%;
+    height: 100%;*/
 }
 
 #visual {
-	/*background-image: url("../images/home/trees.jpg");*/
 	display: table;
 	min-height: 100%
 }
 
 #audio {
-	/*background-image: url();*/
 	display: table;
 	min-height: 100%;
 }
@@ -25,7 +31,28 @@
 h1 {
 	display: table-cell;
 	vertical-align: middle;
-	/*font-size: 2em;*/
+	color: #F8D6DE;
+	text-decoration: none;
+	font-size: 4em;
+}
 
+a {
+	text-decoration: none;
+	color: #F8D6DE;
+
+}
+
+a:hover {
+	text-decoration: none;
+	color: #BC516C;
+}
+
+#video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: 0;
 }
 

@@ -1,0 +1,98 @@
+html,body {
+	border:0;
+	line-height:1.5;
+	margin:0;
+	padding:0;
+	text-decoration: none;
+}
+
+div,span,object,iframe,img,table,caption,thead,tbody,tfoot,tr,tr,td,article,aside,canvas,details,figure,hgroup,menu,nav,footer,header,section,summary,mark,audio,video {
+	border:0;
+	margin:0;
+	padding:0;
+}
+
+h1 {
+	font-family: 'Poiret One', cursive;
+	padding-left: 1em;
+	color: #BC516C;
+}
+
+h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,address,cit,code,del,dfn,em,ins,q,samp,small,strong,sub,sup,b,i,hr,dl,dt,dd,ol,ul,li,fieldset,legend,label {
+	border:0;
+	font-size:100%;
+	vertical-align:baseline;
+	margin:0;
+	padding:0;
+}
+
+article,aside,canvas,figure,figure img,figcaption,hgroup,footer,header,nav,section,audio,video {
+	display:block
+}
+
+table {
+	border-collapse:separate;
+	border-spacing:0;
+}
+
+table caption,table th,table td {
+	text-align:left;
+	vertical-align:middle;
+}
+
+a img {
+	border:0}:focus{outline:0}
+
+.spotify {
+	display: none;
+	margin: 0 auto;
+	width: inherit;
+	height: 80px;
+	position: absolute;
+}
+
+.imageBlock:hover .spotify {
+	display: block;
+}
+
+body {
+	background:#F8D6DE;
+}
+
+.mainFooter {
+	background:#333;
+	color:#FFF;
+	padding:.6em 2em 1.4em;
+	font-size:.8em;
+	font-family:'Crete Round',serif;
+	clear:both;
+	float:left;
+	width:100%;
+}
+
+@media (max-width:1024px) {
+	.mainFooter{padding:1.8em .8em;margin-top:1em}
+}
+
+.mainFooter a {
+	color:#DDD;
+}
+
+@media (min-width:1024px){.mainFooter{position:fixed;bottom:0;left:0}}
+.mainFooter .author,.mainFooter .social{display:block;float:left;margin:0 1em}
+@media (max-width:1024px){.mainFooter .author,.mainFooter .social{margin-bottom:1em}}
+@media (max-width:1024px){.welcomeBlock{clear:both;width:90%!important;float:left;padding:3%!important}}
+
+.welcomeBlock h1,.welcomeBlock h2{font-weight:400}
+
+.welcomeBlock h1.mainTitle a{font-size:4em;font-family:'Crete Round',serif;color:#999;text-decoration:none;line-height:1em}
+@media (max-width:767px){.welcomeBlock h1.mainTitle a{font-size:2em}}
+
+.welcomeBlock h2.subtitle{padding-top:1em;padding-bottom:1em;color:#555;font-family:Verdana,Tahoma,'Trebuchet MS',sans-serif;font-size:1.2em}
+@media (max-width:1024px){.welcomeBlock h2.subtitle{font-size:1em}}
+@media (min-width:1024px){section.gallery{position:absolute;margin:auto;top:0;left:0;bottom:0;right:0;width:9500px;height:550px}}
+section.gallery .imageBlock,section.gallery .welcomeBlock{float:left;margin:0 .8em;padding:0}
+@media (max-width:767px){section.gallery .imageBlock,section.gallery .welcomeBlock{width:44%;float:left;margin:2% 2% 0}}
+section.gallery .imageBlock .image img,section.gallery .welcomeBlock .image img{width:100%}
+@media (min-width:1024px){section.gallery .imageBlock .image img,section.gallery .welcomeBlock .image img{height:550px;width:auto}}
+@media (min-width:1024px){section.gallery .welcomeBlock{width:600px;margin-left:4em}}
